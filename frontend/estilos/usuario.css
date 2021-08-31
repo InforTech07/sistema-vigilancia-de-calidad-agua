@@ -1,0 +1,7 @@
+@import url(./colores.css);
+
+.cuerp-usuario{
+    width: 200px;
+    height: 200px;
+    background-color: var(--tercer-color);
+}

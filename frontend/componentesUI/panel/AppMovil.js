@@ -11,7 +11,13 @@ export function AppMovil(){
         $appmovil.setAttribute('id',"pg2");
         $appmovil.setAttribute('style',"display:none;")
         $appmovil.innerHTML=`
-        <h2>Pagina App movil</h2>
+        <h2>soy el titulolo</h2>
+        <button class="primer-btn">soy boton</button>
+        <form action="">
+            <input type="text" placeholder="nombre">
+            <input type="text" placeholder="email">
+            <button class="tercer-btn">enviar</button>
+        </form>
         `;
         return $appmovil;
 }

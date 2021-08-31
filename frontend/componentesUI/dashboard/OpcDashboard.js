@@ -1,27 +1,23 @@
 "use strict";
 //@ts-check
 /**
- * creacion de las opciones que tendra el modulo ayuda
+ * creacion de las opciones que tendra el modulo dashboard
  * @returns {void} opciones del modulo y funcionalidades
  */
-export function OpcUsuario(){
-    const $opcusuario = document.createElement('div');
-        $opcusuario.classList.add("menu-lateral");
-        $opcusuario.innerHTML=`
+export function OpcDashboard(){
+    const $opcdashboard = document.createElement('div');
+        $opcdashboard.classList.add("menu-lateral");
+        $opcdashboard.innerHTML=`
                     <h1>Opciones</h1>
-                    <button id="btn-1" class="btn-modulo">usuario1</button>
-                    <button id="btn-2" class="btn-modulo">usuari2</button>
-                    <button id="btn-3" class="btn-modulo">usuario3</button>
-                    <button id="btn-4" class="btn-modulo">usuario4</button>
+                    <button id="btn-1" class="btn-modulo">HILO ACTUAL</button>
+                    <button id="btn-2" class="btn-modulo">HISTORIAL</button>
         `;
         /**
          * inicio de funcionalidades
          */
-        function iniUsuario(){
+        function iniDashboard(){
             const btn1 = document.getElementById('btn-1');
             const btn2 = document.getElementById('btn-2');
-            const btn3 = document.getElementById('btn-3');
-            const btn4 = document.getElementById('btn-4');
             /**
              * muestra la pagina seleccinada
              * @param {string} pag id de la pagina a mostrar
@@ -60,26 +56,12 @@ export function OpcUsuario(){
                 verPagina('pg2')
                 marcarOpcion('btn-2')
             })
-            /**
-             * @event 
-             */
-            btn3.addEventListener('click',()=>{
-                verPagina('pg3')
-                marcarOpcion('btn-3')
-            })
-            /**
-             * @event 
-             */
-            btn4.addEventListener('click',()=>{
-                verPagina('pg4')
-                marcarOpcion('btn-4')
-            })
             verPagina('pg1')    
             marcarOpcion('btn-1')
         }
         /**
          * Temporizador para inicio de funcionalidades
          */
-        setTimeout(()=>iniUsuario(),100);
-        return $opcusuario;
+        setTimeout(()=>iniDashboard(),100);
+        return $opcdashboard;
 }

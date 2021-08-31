@@ -65,12 +65,18 @@
     display: inline;
     padding: 35px 35px;
 }
+
 .menu-app a
 {
     display: inline-block;
     text-decoration: none;
     color: var(--texto-color-light);
     font-size: 1.5rem;
+    transition: color 0.3s;
+}
+.menu-app a:hover
+{
+    color: var(--primer-boton-light);
 }
 
 /*-=============== modulo =================-*/

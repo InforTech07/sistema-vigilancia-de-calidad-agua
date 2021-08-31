@@ -1,24 +1,29 @@
 "use strict";
+//@ts-check
 /**
- * Componente inicial de modulo panel
+ * Importacion de componentes para el modulo
+ * @requires componente: opcPanel  para las opciones del modulo
+ * @requires componente: Institucion  pagina del modulo
+ * @requires componente: AppMovil  pagina del modulo
+ * @requires componente: Publicacion  pagina del modulo
+ * @requires componente: copia seguridad  pagina del modulo
  */
-
-/*---- importando componentes*/
-import { OpcPanel } from "./OpcPanel.js"; /**opciones del mudulo */
-import { Institucion } from "./Institucion.js"; /**pagina de institucion */
-import {AppMovil} from "./AppMovil.js"; /**pagina de app mvil */
-import { Publicacion } from "./publicion.js"; /**pagina de publicacion */
-import { CopiaSeguridad } from "./CopiaSeguridad.js";/**pagina de copia de seguridad */
+import { OpcPanel } from "./OpcPanel.js"; 
+import { Institucion } from "./Institucion.js"; 
+import {AppMovil} from "./AppMovil.js"; 
+import { Publicacion } from "./publicion.js"; 
+import { CopiaSeguridad } from "./CopiaSeguridad.js";
 
 /**
- * @function panel/constructor  del modulo panel
- * @constant panel elemento generado para contener todo el modulo
- * @constant paginas elemento generado contener todas las paginas
- * **/
+ * Unificacion de componentes del modulo
+ * @returns {void} modulo de panel y funcionalidades
+ */
 export function Panel() {
+    /**panel contenedor del modulo */
     const $panel=document.createElement('section');
     $panel.classList.add('contenedor-modulo');
     $panel.appendChild(OpcPanel());
+    /**paginas contenedor de paginas */
     const $paginas = document.createElement('div');
     $paginas.classList.add("contenido-pagina")
     $paginas.appendChild(Institucion());

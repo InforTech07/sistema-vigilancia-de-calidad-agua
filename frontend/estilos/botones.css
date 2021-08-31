@@ -21,7 +21,7 @@
 
 .primer-btn:hover 
 {
-    padding: 15px 30px;
+    padding: 13px 26px;
 }
 
 .segundo-btn /*- boton segundo-*/
@@ -41,7 +41,7 @@
 
 .segundo-btn:hover 
 {
-    padding: 15px 30px;
+    padding: 13px 26px;
 }
 .tercer-btn /*- boton tercer-*/
 {
@@ -60,5 +60,5 @@
 
 .tercer-btn:hover 
 {
-    padding: 15px 30px;
+    padding: 13px 26px;
 }

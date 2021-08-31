@@ -4,20 +4,20 @@
  * creacion de las opciones que tendra el modulo ayuda
  * @returns {void} opciones del modulo y funcionalidades
  */
-export function OpcUsuario(){
-    const $opcusuario = document.createElement('div');
-        $opcusuario.classList.add("menu-lateral");
-        $opcusuario.innerHTML=`
+export function OpcTanque(){
+    const $opctanque = document.createElement('div');
+        $opctanque.classList.add("menu-lateral");
+        $opctanque.innerHTML=`
                     <h1>Opciones</h1>
-                    <button id="btn-1" class="btn-modulo">usuario1</button>
-                    <button id="btn-2" class="btn-modulo">usuari2</button>
-                    <button id="btn-3" class="btn-modulo">usuario3</button>
-                    <button id="btn-4" class="btn-modulo">usuario4</button>
+                    <button id="btn-1" class="btn-modulo">tanque1</button>
+                    <button id="btn-2" class="btn-modulo">tanque2</button>
+                    <button id="btn-3" class="btn-modulo">tanque3</button>
+                    <button id="btn-4" class="btn-modulo">tanque4</button>
         `;
         /**
          * inicio de funcionalidades
          */
-        function iniUsuario(){
+        function iniTanque(){
             const btn1 = document.getElementById('btn-1');
             const btn2 = document.getElementById('btn-2');
             const btn3 = document.getElementById('btn-3');
@@ -80,6 +80,6 @@ export function OpcUsuario(){
         /**
          * Temporizador para inicio de funcionalidades
          */
-        setTimeout(()=>iniUsuario(),100);
-        return $opcusuario;
+        setTimeout(()=>iniTanque(),100);
+        return $opctanque;
 }

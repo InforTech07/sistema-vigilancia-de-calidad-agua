@@ -4,20 +4,20 @@
  * creacion de las opciones que tendra el modulo ayuda
  * @returns {void} opciones del modulo y funcionalidades
  */
-export function OpcUsuario(){
-    const $opcusuario = document.createElement('div');
-        $opcusuario.classList.add("menu-lateral");
-        $opcusuario.innerHTML=`
+export function OpcAyuda(){
+    const $opcayuda = document.createElement('div');
+        $opcayuda.classList.add("menu-lateral");
+        $opcayuda.innerHTML=`
                     <h1>Opciones</h1>
-                    <button id="btn-1" class="btn-modulo">usuario1</button>
-                    <button id="btn-2" class="btn-modulo">usuari2</button>
-                    <button id="btn-3" class="btn-modulo">usuario3</button>
-                    <button id="btn-4" class="btn-modulo">usuario4</button>
+                    <button id="btn-1" class="btn-modulo">Ayuda1</button>
+                    <button id="btn-2" class="btn-modulo">Ayuda2</button>
+                    <button id="btn-3" class="btn-modulo">Ayuda3</button>
+                    <button id="btn-4" class="btn-modulo">Ayuda4</button>
         `;
         /**
          * inicio de funcionalidades
          */
-        function iniUsuario(){
+        function iniAyuda(){
             const btn1 = document.getElementById('btn-1');
             const btn2 = document.getElementById('btn-2');
             const btn3 = document.getElementById('btn-3');
@@ -80,6 +80,6 @@ export function OpcUsuario(){
         /**
          * Temporizador para inicio de funcionalidades
          */
-        setTimeout(()=>iniUsuario(),100);
-        return $opcusuario;
+        setTimeout(()=>iniAyuda(),100);
+        return $opcayuda;
 }
