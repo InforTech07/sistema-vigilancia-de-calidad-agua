@@ -1,0 +1,64 @@
+/**
+--- botones ... 
+*/
+
+@import url(./colores.css);
+/*-================ botones=============================-*/
+.primer-btn /*- boton primario-*/
+{
+    background-color: var(--primer-boton);
+    border: none;
+    color: var(--texto-color-light);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5%;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+    transition: 0.5s all;
+}
+
+.primer-btn:hover 
+{
+    padding: 15px 30px;
+}
+
+.segundo-btn /*- boton segundo-*/
+{
+    background-color: var(--segundo-boton);
+    border: none;
+    color: var(--titulo-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5%;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+    transition: 0.5s all;
+}
+
+.segundo-btn:hover 
+{
+    padding: 15px 30px;
+}
+.tercer-btn /*- boton tercer-*/
+{
+    background-color: var(--tercer-boton);
+    border: none;
+    color: var(--titulo-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5%;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+    transition: 0.5s all;
+}
+
+.tercer-btn:hover 
+{
+    padding: 15px 30px;
+}

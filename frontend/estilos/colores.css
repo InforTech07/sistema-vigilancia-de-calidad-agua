@@ -1,0 +1,23 @@
+/**
+--- definicion de colores... 
+*/
+
+:root
+{
+  /*--===  colores de fondo: #A3B2CA; ====-*/
+    --primer-color: #EFF0F2;
+    --segundo-color: #FFFFFF;
+    --tercer-color: #0162CC;
+    --cuarto-color: #0046AF;
+    --quinto-color:#0162CC;
+    /*--=== colores de texto ===-*/
+    --titulo-color:#274472;
+    --texto-color:#445D6E;
+    --texto-color-light:#FFFFFF;
+    /*--=== colores de botones ====--*/
+    --primer-boton: #0046AF;
+    --primer-boton-light: #03DAC5;
+    --segundo-boton:#FBE7C6;
+    --tercer-boton:#FF9B66;
+    --cuarto-boton: #9A2E28;
+}

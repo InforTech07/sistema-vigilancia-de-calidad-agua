@@ -1,0 +1,216 @@
+/**
+--- estilos de la estructura de la aplicacion.
+*/
+/*-===========importacion de colores ================-*/
+@import url(./colores.css);
+
+/*-============== encabezado =======================-*/
+.encabezado
+{
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    background-color: var(--segundo-color);
+    place-items: center;
+}
+.encabezado h1
+{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--titulo-color);
+}
+.encabezado img
+{
+    width: 100px;
+    height: 100px;
+}
+
+#btn-menu
+{
+    display: none;
+}
+
+/*-==================== menu horizontal====================-*/
+.menu-pag
+{
+    width: 100vw;
+    height: 70px;
+    background-color: var(--tercer-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-pag li{
+    display: inline;
+    padding: 70px 70px;
+}
+.menu-pag a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--texto-color-light);
+    font-size: 1.5rem;
+}
+
+.menu-app
+{
+    width: 100vw;
+    height: 70px;
+    background-color: var(--tercer-color);
+    display: flex;
+}
+
+.menu-app li{
+    display: inline;
+    padding: 35px 35px;
+}
+.menu-app a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--texto-color-light);
+    font-size: 1.5rem;
+}
+
+/*-=============== modulo =================-*/
+.contenedor-modulo
+{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.contenedor-modulo h1
+{
+    color: var(--texto-color-light);
+}
+.menu-lateral
+{
+    width: 100%;
+    height: 76vh;
+    background-color: var(--cuarto-color);
+}
+
+.menu-lateral button
+{
+    width: 100%;
+    background-color: var(--quinto-color);
+    border: none;
+    color: var(--texto-color-light);
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+
+.btn-entrar-salir
+{
+    display: none;
+}
+.contenido-pagina
+{
+    width: 100%;
+}
+
+
+
+
+/*-============================== RESPONSIVIDAD =========================--*/
+
+@media screen and (max-width:768px) {
+    .encabezado
+    {
+        height: 8vh;
+    }
+    .encabezado h1
+    {
+        font-size: 1rem;
+    }
+    .encabezado img
+    {
+        height: 8vh;
+    }
+
+    .menu-pag li{
+        padding: 40px 40px;
+    }
+    .menu-app li{
+        padding: 2px 8px;
+    }
+    .menu-horizontal a
+    {
+        font-size: 1.2rem;
+    }
+
+    .contenedor-modulo
+    {
+        grid-template-columns: 20% 80%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .encabezado
+    {
+        height: 8vh;
+    }
+    .encabezado h1
+    {
+        font-size: 0.6rem;
+    }
+    .encabezado img
+    {
+        width: 50px;
+        height: 50px;
+    }
+    #btn-irlogin
+    {
+        display: none;
+    }
+    
+    #btn-menu
+    {
+        display: block;
+        font-size: 0.5rem;
+    }
+    .contenedor-modulo
+    {
+        grid-template-columns: 100%;
+        padding: 10px 20px;
+    }
+
+    .menu-vertical
+    {
+        display: none;
+    }
+
+    .menu-app
+    {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--tercer-color);
+        display: flex;
+        justify-content: center;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .menu-app li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .menu-app a:hover
+    {
+        color: var(--titulo-color);
+    }  
+    
+}
+
+@media screen and (max-width:360px) {
+
+}
