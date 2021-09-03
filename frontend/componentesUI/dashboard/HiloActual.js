@@ -1,8 +1,8 @@
 "use strict";
 //@ts-check
 /**
- * creacion de las opciones que tendra el modulo dashboard
- * @returns {void} hiloactual del modulo y funcionalidades
+ * div con los componentes del modulo
+ * @returns {HTMLDivElement}
  */
 export function HiloActual(){
     const $hiloactual = document.createElement('div');

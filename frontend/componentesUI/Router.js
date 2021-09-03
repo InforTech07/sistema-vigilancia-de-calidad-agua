@@ -1,17 +1,26 @@
 "use strict";
 //@ts-check
+
+/**
+ * Modulo Muestra - encargado de ingresar las muestras y creacion de hilos
+ * @module router - enrutador de componentes
+ * @author kevin pilo -umg 
+ * @copyright - 
+ * @version 1.0
+ */
+
 /**
  * Importacion de modulos 
- * @requires modulo: inicio  pagina inicial de la aplicacion
- * @requires componente: menupagina  opciones iniciales del modulo inicial
- * @requires componente: menuapp opciones  de navegacion en los modulos princiapales
- * @requires modulo: tanque funcionalidades e interfaz del modulo
- * @requires modulo: muestra funcionalidades e interfaz del modulo
- * @requires modulo: dashboard funcionalidades e interfaz del modulo
- * @requires modulo: reporte funcionalidades e interfaz del modulo
- * @requires modulo: usuario funcionalidades e interfaz del modulo
- * @requires modulo: panel funcionalidades e interfaz del modulo
- * @requires modulo: ayuda funcionalidades e interfaz del modulo 
+ * @requires modulo:inicio  -pagina inicial de la aplicacion
+ * @requires componente:menupagina  -opciones iniciales del modulo inicial
+ * @requires componente:menuapp -opciones  de navegacion en los modulos princiapales
+ * @requires modulo:tanque -funcionalidades e interfaz del modulo
+ * @requires modulo:muestra -funcionalidades e interfaz del modulo
+ * @requires modulo:dashboard -funcionalidades e interfaz del modulo
+ * @requires modulo:reporte -funcionalidades e interfaz del modulo
+ * @requires modulo:usuario -funcionalidades e interfaz del modulo
+ * @requires modulo:panel -funcionalidades e interfaz del modulo
+ * @requires modulo:ayuda -funcionalidades e interfaz del modulo 
  */
 import {Inicio} from './inicio/Inicio.js';
 import{MenuPagina} from './aplicacion/MenuPagina.js';
@@ -25,66 +34,65 @@ import {Panel} from './panel/Panel.js';
 import {Ayuda} from './ayuda/Ayuda.js';
 
 /**
- * Enrutador de navegacion de modulos de aplicacion
+ * identificadores de los modulos
+ * @type {string} -id de modulo
  */
-
+const M_TANQUE='m-tanque';
+const M_MUESTRA='m-muestra';
+const M_DASHBOARD='m-dashboard';
+const M_REPORTE='m-reporte';
+const M_USUARIO='m-usuario';
+const M_PANEL='m-panel';
+const M_AYUDA='m-ayuda';  
+/**
+ * Enrutador de navegacion de modulos de aplicacion
+ * @returns {void} - muestra el componente seleccionado
+ */
 export function Router(){
-    const $contenedor = document.getElementById('contenedor-modulo');
+  const $contenedor = document.getElementById('contenedor-modulo');
     let {hash} = location;
     console.log(hash);
     $contenedor.innerHTML = null;
     switch (hash) {
-        case '/':
-        case '#/':
-            $contenedor.appendChild(MenuPagina());
-            $contenedor.appendChild(Inicio());
-            break;
-        case '#/app/login':
-                $contenedor.appendChild(MenuPagina());
-               /**
-                * modulo de login
-                */
-        
+      case '/':
+      case '#/':
+        $contenedor.appendChild(MenuPagina());
+        $contenedor.appendChild(Inicio());
         break;
-        case '#/app/tanque':
-                $contenedor.appendChild(MenuApp('m-tanque'));
-                $contenedor.appendChild(Tanque());
-        
+      case '#/app/login':
+        $contenedor.appendChild(MenuPagina());
         break;
-        case '#/app/muestra':
-                $contenedor.appendChild(MenuApp('m-muestra'));
-                $contenedor.appendChild(Muestra());
-        
+      case '#/app/tanque':
+        $contenedor.appendChild(MenuApp(M_TANQUE));
+        $contenedor.appendChild(Tanque());
         break;
-        case '#/app/dashboard':
-                $contenedor.appendChild(MenuApp('m-dashboard'));
-                $contenedor.appendChild(Dashboard());
-        
+      case '#/app/muestra':
+        $contenedor.appendChild(MenuApp(M_MUESTRA));
+        $contenedor.appendChild(Muestra());
         break;
-        case '#/app/reporte':
-                $contenedor.appendChild(MenuApp('m-reporte'));
-                $contenedor.appendChild(Reporte());
-        
+      case '#/app/dashboard':
+        $contenedor.appendChild(MenuApp(M_DASHBOARD));
+        $contenedor.appendChild(Dashboard());  
         break;
-        case '#/app/usuario':
-                $contenedor.appendChild(MenuApp('m-usuario'));
-                $contenedor.appendChild(Usuario());
-        
+      case '#/app/reporte':
+        $contenedor.appendChild(MenuApp(M_REPORTE));
+        $contenedor.appendChild(Reporte());
         break;
-        case '#/app/panel':
-                $contenedor.appendChild(MenuApp('m-panel'));
-                $contenedor.appendChild(Panel());
-        
+      case '#/app/usuario':
+        $contenedor.appendChild(MenuApp(M_USUARIO));
+        $contenedor.appendChild(Usuario());
         break;
-        case '#/app/ayuda':
-                $contenedor.appendChild(MenuApp('m-ayuda'));
-                $contenedor.appendChild(Ayuda());
-        
+      case '#/app/panel':
+        $contenedor.appendChild(MenuApp(M_PANEL));
+        $contenedor.appendChild(Panel());
         break;
-        default:
-                $contenedor.appendChild(MenuPagina());
-                $contenedor.appendChild(Inicio());
-
-            break;
+      case '#/app/ayuda':
+        $contenedor.appendChild(MenuApp(M_AYUDA));
+        $contenedor.appendChild(Ayuda());
+        break;
+      default:
+        $contenedor.appendChild(MenuPagina());
+        $contenedor.appendChild(Inicio());
+        break;
     }
 }
