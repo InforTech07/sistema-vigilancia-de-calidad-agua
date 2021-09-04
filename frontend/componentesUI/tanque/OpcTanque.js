@@ -1,5 +1,7 @@
 "use strict";
 //@ts-check
+import{mostrarComponente}from'../utilidades/MostrarComponente.js';
+
 const PAGINA_1= 'pg1';
 const PAGINA_2= 'pg2';
 const PAGINA_3= 'pg3';

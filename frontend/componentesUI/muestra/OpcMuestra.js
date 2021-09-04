@@ -3,7 +3,7 @@
 /**
  * Opciones del modulo de muestras
  * @module OpcMuestras - opciones
- * @author kevin-pilo-umg 
+ * @author 
  * @copyright - ksksue
  * @version 1.0
  */
