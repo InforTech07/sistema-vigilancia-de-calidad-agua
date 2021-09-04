@@ -1,0 +1,94 @@
+@import url('./colores.css');
+
+.contenedor-progreso{
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.contenedor-progreso img
+{
+    width: 70%;
+    height: 70%;
+}
+
+.contenedor-vision-mision
+{
+    background-color: var(--cuarto-color);
+    text-align: center;
+    color: var(--texto-color-light);
+}
+.vision
+{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.vision img
+{
+    width: 60%;
+    height: 60%;
+    transition: 1s all;
+}
+.vision img:hover
+{
+    width: 80%;
+    height: 80%;
+}
+.mision
+{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.mision img{
+    width: 60%;
+    height: 60%;
+    transition: 1s all;
+}
+.mision img:hover
+{
+    width: 80%;
+    height: 80%;
+}
+.contenedor-publicacion
+{
+    width: 100%;
+    text-align: center;
+}
+
+.publicaciones
+{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+}
+.publicacion
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.publicacion img
+{
+    width: 50%;
+    height: 50%;
+}
+
+
+footer
+{
+    width: 100%;
+    position:relative;
+    height: 100px;
+    background-color: var(--tercer-color);
+}
