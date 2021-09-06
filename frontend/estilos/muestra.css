@@ -1,0 +1,39 @@
+@import url('./colores.css');
+.pag-nuevo{
+
+}
+
+.pag-nuevo h2{
+    color: var(--titulo-color);
+}
+.pag-nuevo hr{
+    color: var(--titulo-color);
+}
+.pag-nuevo form{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+}
+.pag-agregar-tanque{
+    
+}
+.contendor-dato
+{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    gap: 5%;
+}
+
+
+.datos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.datos p{
+    width: 50%;
+}
+.datos button{
+    width: 20%;
+    margin-left: 20px;
+}
