@@ -1,0 +1,32 @@
+//clonar respositorio
+git clone https://github.com/InforTech07/sistema-vigilancia-de-calidad-agua.git
+
+
+//configuracion git
+git config --global user.email tuemail@ejemplo.com
+git config --global user.name tuemail@ejemplo.com
+
+git config --local user.email tuemail@ejemplo.com
+git config --global user.name tuemail@ejemplo.com
+
+
+
+//ver estado
+git status
+
+//agregar archivos
+git add .
+
+//hacer un commit
+git commit –m “cambios resalizado”
+
+
+// subir codigo 
+git push origin main
+
+// descargar codigo
+git pull 
+
+
+//ver ramas
+git branch
