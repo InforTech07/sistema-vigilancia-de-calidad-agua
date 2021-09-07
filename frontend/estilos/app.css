@@ -34,7 +34,7 @@
 /*-==================== menu horizontal====================-*/
 .menu-pag
 {
-    width: 100vw;
+    width: 100%;
     height: 70px;
     background-color: var(--tercer-color);
     display: flex;
@@ -43,7 +43,7 @@
 }
 .menu-pag li{
     display: inline;
-    padding: 70px 70px;
+    padding: 50px 50px;
 }
 .menu-pag a
 {
@@ -145,7 +145,6 @@
     }
     
 }
-
 
 /*-============================== RESPONSIVIDAD =========================--*/
 

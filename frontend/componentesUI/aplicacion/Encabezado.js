@@ -19,7 +19,7 @@ export function Encabezado() {
 
         btn.addEventListener('click',()=>{
             console.log('presionando');
-            location.href= '#/app/dashboard'
+            location.href= '#/app/login'
         })
 
         const btnMenu = document.getElementById('btn-menu');

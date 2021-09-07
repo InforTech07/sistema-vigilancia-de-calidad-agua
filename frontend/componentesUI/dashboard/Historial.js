@@ -10,7 +10,7 @@ export function Historial(){
         $historial.setAttribute('id',"pg2");
         $historial.setAttribute('style',"display:none;")
         $historial.innerHTML=`
-        <h2>Historial de hilos</h2>
+        
         `;
         return $historial;
 }

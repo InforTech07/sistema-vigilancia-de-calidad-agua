@@ -3,23 +3,70 @@
 .contenedor-progreso{
     width: 100%;
     height: 76vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-
+    color: var(--titulo-color);
 }
-.contenedor-progreso img
+/*----=========progreso=======----*/
+.contenedor-grafica
 {
-    width: 70%;
-    height: 70%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+    width: 98%;
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px 5px 0px 20px;
+    
+       
 }
+
+.contenedor-grafica h3{
+    font-size: 1rem;
+    
+    
+}
+.card-progreso
+{
+    background-color: var(--segundo-color);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+    transition: all .3s;
+}
+.elemento-progreso{
+    padding: 0px 10px 0px 10px;
+}
+.progreso
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progreso progress{
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.progreso label{
+    text-align: left;
+}
+
+.card-progreso:hover
+{
+    transform: scale(0.9);
+    border: 1px solid var(--quinto-color);
+}
+
+
+
 
 .contenedor-vision-mision
 {
     background-color: var(--cuarto-color);
     text-align: center;
     color: var(--texto-color-light);
+    width: 100%;
 }
 .vision
 {
@@ -37,8 +84,7 @@
 }
 .vision img:hover
 {
-    width: 80%;
-    height: 80%;
+    transform: scale(1.3);
 }
 .mision
 {
@@ -55,8 +101,7 @@
 }
 .mision img:hover
 {
-    width: 80%;
-    height: 80%;
+    transform: scale(1.3);
 }
 .contenedor-publicacion
 {
@@ -69,6 +114,7 @@
     display: grid;
     grid-template-columns: 30% 30% 30%;
     gap: 5%;
+    row-gap: 2%;
 }
 .publicacion
 {
@@ -80,15 +126,29 @@
 }
 .publicacion img
 {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 
 
-footer
+footer{
+    background-color: var(--quinto-color);
+    color: var(--texto-color-light);
+    padding: 5px 50px 5px 50px;
+}
+
+
+.footer-datos
 {
-    width: 100%;
-    position:relative;
-    height: 100px;
-    background-color: var(--tercer-color);
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+}
+.footer-datos a{
+    text-decoration: none;
+    color: var(--texto-color-light);
+}
+.footer-dato-fin
+{
+    text-align: center;
 }

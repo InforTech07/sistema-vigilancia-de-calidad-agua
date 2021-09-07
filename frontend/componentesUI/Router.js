@@ -25,6 +25,7 @@
 import {Inicio} from './inicio/Inicio.js';
 import{MenuPagina} from './aplicacion/MenuPagina.js';
 import{MenuApp} from './aplicacion/MenuApp.js';
+import{Login} from './aplicacion/Login.js';
 import {Tanque} from './tanque/Tanque.js';
 import {Muestra} from './muestra/Muestra.js';
 import {Dashboard} from './dashboard/Dashboard.js';
@@ -61,6 +62,7 @@ export function Router(){
         break;
       case '#/app/login':
         $contenedor.appendChild(MenuPagina());
+        $contenedor.appendChild(Login());
         break;
       case '#/app/tanque':
         $contenedor.appendChild(MenuApp(M_TANQUE));
