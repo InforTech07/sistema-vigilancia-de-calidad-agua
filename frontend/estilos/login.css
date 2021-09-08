@@ -128,16 +128,7 @@
       transform: rotate(360deg);
     }
   }
-  /*
-  a {
-    text-decoration: none;
-    color: rgba(22, 138, 214, 0.6);
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    font-size: 12px;
-  }*/
-
+ 
 @keyframes intro-login {
     from{
         opacity: 0;

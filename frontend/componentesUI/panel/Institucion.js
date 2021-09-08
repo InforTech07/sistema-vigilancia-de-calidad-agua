@@ -5,24 +5,66 @@ export function Institucion(){
         $institucion.setAttribute('id',"pg1");
         $institucion.setAttribute('style',"display:block;")
         $institucion.innerHTML=`
-        <table>
-            <thead>
-                <tr>
-                <th>nombre</th>
-                <th>correo</th>
-                <th>Opciones</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th colspan='2'>listado usuario</th>
-            </tr>
-        </tfoot>
-        <tbody id="datos-institucion">
-        </tbody>
-        </table>
+        <section class="contenedor-institucion">
+    <div class="datos-institucion">
+      <h3>Institución</h3>
+      <hr>
+      <form action="">
+        <p><label for="" class="input-label">Entidad:</label>
+          <input type="text" class="input-dato" id="" placeholder="Nombre institución" required=""/></p>
+        <p><label for="" class="input-label">Departamento:</label>
+           <input type="text" class="input-dato" id="" placeholder="Dependencia" required=""/></p>
+        <p class="contenedor-archivo">
+            <label for="">logotipo:</label>
+              <label class="input-archivo"> 
+                  <input type="file" id="file" aria-label="archivo">
+                  <span class="input-archivo-personalizado"></span>
+              </label>
+          </p>
+        <p><label for="" class="input-label">Nombre del Sistema:</label>
+           <input type="text" class="input-dato" id="" placeholder="Nombre del sistema" required=""/></p>
+      </form>
+      <div class="botones-institucion">
+        <p><button class="tercer-btn">Editar</button></p>
+        <p><button class="primer-btn">Guardar</button></p> 
+      </div>
+    </div>
+    <div class="datos-informe-salud">
+      <h3>Datos para informe centro de salud</h3>
+      <hr>
+      <form action="">
+        <p><label for="" class="input-label">Departamento:</label>
+          <input type="text" class="input-dato" id="" placeholder="Nombre institución" required=""/></p>
+        <p><label for="" class="input-label">Municipio:</label>
+          <input type="text" class="input-dato" id="" placeholder="Nombre institución" required=""/></p>
+        <p><label for="" class="input-label">Area Saludo:</label>
+          <input type="text" class="input-dato" id="" placeholder="Nombre institución" required=""/></p>
+        <p><label for="" class="input-label">Servicio de salud:</label>
+          <input type="text" class="input-dato" id="" placeholder="Nombre institución" required=""/></p>
+        <p><label for="" class="input-label">Distrito Salud:</label>
+          <input type="text" class="input-dato" id="" placeholder="Nombre institución" required=""/></p>
+        <p><label for="" class="input-label">Director de Salud:</label>
+          <input type="text" class="input-dato" id="" placeholder="Nombre institución" required=""/></p>
+        <p class="contenedor-archivo">
+            <label for="">logotipo Ministerio de Salud:</label>
+              <label class="input-archivo"> 
+                  <input type="file" id="file" aria-label="archivo">
+                  <span class="input-archivo-personalizado"></span></label></p>
+        <p class="contenedor-archivo">
+            <label for="">logotipo SIVIAGUA:</label>
+              <label class="input-archivo"> 
+                  <input type="file" id="file" aria-label="archivo">
+                  <span class="input-archivo-personalizado"></span></label></p>
+      </form>
+      <div class="botones-institucion">
+        <p><button class="tercer-btn">Editar</button></p>
+        <p><button class="primer-btn">Guardar</button></p> 
+      </div>
+    </div> 
+  </section>
         `;
         function iniInstucion() {
+           /*
             const peticonPanel = new PeticionPanel();
             peticonPanel.hacerPeticion(null,{},'GET').then(datos=>{
             const $list = document.getElementById('datos-institucion');
@@ -40,8 +82,8 @@ export function Institucion(){
                 </tr>
                 `;
             }
-            })
+            })*/
         }
-        setTimeout(()=>iniInstucion(),100);
+        //setTimeout(()=>iniInstucion(),100);
         return $institucion;
 }

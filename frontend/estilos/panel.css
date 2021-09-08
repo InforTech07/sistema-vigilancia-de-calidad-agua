@@ -1,0 +1,76 @@
+@import url('./colores.css');
+
+.contenedor-institucion
+{
+    width: 100%;
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--titulo-color);
+}
+
+
+.datos-institucion{
+    width: 100%;
+    color: var(--titulo-color);
+    padding: 0px 10px 0px 10px;
+}
+
+.datos-institucion form
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.datos-institucion p 
+{
+    width: 40%;
+}
+.botones-institucion{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.datos-informe-salud
+{
+    width: 100%;
+    color: var(--titulo-color);
+    padding: 0px 10px 0px 10px;
+}
+
+.datos-informe-salud form
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+}
+
+.contenedor-publicacion
+{
+    width: 100%;
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--titulo-color);
+}
+
+.contenedor-publicacion h3
+{
+    text-align: left;
+}
+
+.datos-publicaciones
+{
+    width: 98%;
+    padding: 0px 20px 0px 10px;
+}
+
+.nueva-publicacion
+{
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.nueva-publicacion form
+{
+    display: flex;
+    justify-content:space-evenly;
+}

@@ -218,10 +218,10 @@ export function Inicio() {
    </div>
    <hr>
    <div class="footer-dato-fin">
-     <h3>Sistema de Vigilancia CalidadAgua</h3>
-     <p> Direccion de agua y Saneamiento Municipalidad San Jose Chacayá.</p>
+     <h3>Sistema de Vigilancia Calidad Agua</h3>
+     <p> Direccion de agua y Saneamiento | Municipalidad de San Jose Chacayá.</p>
      <p>&#169; 2021 umg. todos los derechos reservados.
-       <br>Terminos & referencia <br>Politica de privacidad
+     <br>Politica de privacidad
      </p>
  </div>
 </footer>
