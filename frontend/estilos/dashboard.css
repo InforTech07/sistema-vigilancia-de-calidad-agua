@@ -1,0 +1,50 @@
+@import url('./colores.css');
+
+.contenedor-dashboard
+{
+    width: 98%;
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--titulo-color);
+    padding: 0px 10px 0px 10px;
+}
+
+.contenedor-grafica-dash
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+    width: 96%;
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px 5px 0px 20px;
+}
+
+.contenedor-grafica-dash h3{
+    font-size: 1rem;
+     
+}
+.card-progreso-dash
+{
+    background-color: var(--segundo-color);
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+    font-size: .75rem;
+    transition: all .3s;
+}
+.card-progreso-dash:hover
+{
+    transform: scale(0.9);
+    border: 1px solid var(--quinto-color);
+}
+
+.historial-muestra-filtro form
+{
+    display: flex;
+    justify-content: space-evenly;
+}

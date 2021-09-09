@@ -1,12 +1,13 @@
 @import url('./colores.css');
 
-.contenedor-institucion
+.contenedor-panel
 {
-    width: 100%;
+    width: 98%;
     height: 76vh;
     overflow-y: auto;
     overflow-x: hidden;
     color: var(--titulo-color);
+    padding: 0px 10px 0px 10px;
 }
 
 
@@ -44,14 +45,6 @@
     gap: 5%;
 }
 
-.contenedor-publicacion
-{
-    width: 100%;
-    height: 76vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    color: var(--titulo-color);
-}
 
 .contenedor-publicacion h3
 {
@@ -73,4 +66,24 @@
 {
     display: flex;
     justify-content:space-evenly;
+}
+
+.nueva-backup form
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nueva-backup button
+{
+    height: 40px;
+}
+
+.form-habilitar-app form
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form-habilitar-app button
+{
+    height: 40px;
 }

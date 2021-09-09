@@ -4,7 +4,7 @@ export function Publicacion(){
         $publicacion.setAttribute('id',"pg3");
         $publicacion.setAttribute('style',"display:none;")
         $publicacion.innerHTML=`
-        <section class="contenedor-publicacion">
+        <section class="contenedor-panel">
         <div class="datos-publicaciones">
           <h3>Publicaciones</h3>
           <hr>

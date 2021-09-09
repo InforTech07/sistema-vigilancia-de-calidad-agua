@@ -16,15 +16,12 @@
     height: 60vh;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 0px 5px 0px 20px;
-    
-       
+    padding: 0px 5px 0px 20px;     
 }
 
 .contenedor-grafica h3{
     font-size: 1rem;
-    
-    
+     
 }
 .card-progreso
 {

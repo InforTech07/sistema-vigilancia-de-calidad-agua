@@ -5,7 +5,7 @@ export function Institucion(){
         $institucion.setAttribute('id',"pg1");
         $institucion.setAttribute('style',"display:block;")
         $institucion.innerHTML=`
-        <section class="contenedor-institucion">
+        <section class="contenedor-panel">
     <div class="datos-institucion">
       <h3>Institución</h3>
       <hr>
