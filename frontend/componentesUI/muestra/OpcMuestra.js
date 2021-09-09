@@ -27,10 +27,10 @@ export function OpcMuestra(){
     $opcmuestra.classList.add("menu-lateral");
     $opcmuestra.innerHTML=`
       <h1>Opciones</h1>
-      <button id="btn-1" class="btn-modulo">muestra1</button>
-      <button id="btn-2" class="btn-modulo">muestra2</button>
-      <button id="btn-3" class="btn-modulo">muestra3</button>
-      <button id="btn-4" class="btn-modulo">muestra4</button>
+      <button id="btn-1" class="btn-modulo">Hilos</button>
+      <button id="btn-2" class="btn-modulo">Nuevo Hilo</button>
+      <button id="btn-3" class="btn-modulo">Ingreso Muestra</button>
+      <button id="btn-4" class="btn-modulo">Tipo Muestra</button>
       `;
     /**
      * inicio de funcionalidades

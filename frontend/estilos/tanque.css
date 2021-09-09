@@ -1,0 +1,38 @@
+@import url('./colores.css');
+
+.contenedor-tanques{
+    width: 98%;
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--titulo-color);
+    padding: 0px 10px 0px 10px;
+}
+
+.tanque-buscador
+{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.nuevo-tanque{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+}
+
+.nuevo-tanque{
+    justify-content: center;
+}   
+
+.color-mantenimiento{
+    color: var(--titulo-color);
+}
+
+.form-mantenimiento{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+}
+

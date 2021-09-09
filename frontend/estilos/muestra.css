@@ -1,0 +1,57 @@
+@import url('./colores.css');
+
+
+
+.contenedor-muestras
+{
+    width: 98%;
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--titulo-color);
+    padding: 0px 10px 0px 10px;
+}
+
+
+.form-hilo{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+}
+
+
+.agregar-tanque
+{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 5%;
+} 
+
+.agregar-tanque form
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.agregar-tanque button
+{
+    height: 40px;
+}
+
+.form-ingreso-muestra{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+}
+
+
+.btn-ingreso-muestra
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-nuevo-tipo-muestra{
+    display: flex;
+    justify-content: space-evenly;
+}

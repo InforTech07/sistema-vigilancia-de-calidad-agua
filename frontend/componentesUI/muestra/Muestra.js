@@ -14,6 +14,10 @@
  * @requires componente:Opciones - opciones del modulo
  */
 import {OpcMuestra} from './OpcMuestra.js';
+import {Hilos} from './Hilos.js';
+import {NuevoHilo} from './NuevoHilo.js';
+import { IngresoMuestra } from './IngresoMuestra.js';
+import { TipoMuestra } from './TipoMuestra.js';
 
 
 
@@ -27,7 +31,10 @@ export function Muestra() {
     $muestra.appendChild(OpcMuestra());
     const $paginas = document.createElement('div');
     $paginas.classList.add("contenido-pagina")
-    /** aqui se agregan las paginas... */
+    $paginas.appendChild(Hilos());
+    $paginas.appendChild(NuevoHilo());
+    $paginas.appendChild(IngresoMuestra());
+    $paginas.appendChild(TipoMuestra());
 
     $muestra.appendChild($paginas);
     return $muestra;

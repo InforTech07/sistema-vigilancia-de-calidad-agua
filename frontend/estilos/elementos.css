@@ -21,7 +21,7 @@
 
 .primer-btn:hover 
 {
-    padding: 13px 26px;
+    background-color: var(--primer-boton-light);
 }
 
 .segundo-btn /*- boton segundo-*/
@@ -41,7 +41,7 @@
 
 .segundo-btn:hover 
 {
-    padding: 13px 26px;
+  background-color: var(--primer-boton-light);
 }
 .tercer-btn /*- boton tercer-*/
 {
@@ -60,7 +60,7 @@
 
 .tercer-btn:hover 
 {
-    padding: 13px 26px;
+  background-color: var(--primer-boton-light);
 }
 
 /*-================ inputs=============================-*/
@@ -95,13 +95,14 @@
 
 .input-opciones {
     appearance: none;
-    background-color: transparent;
+    background-color: var(--segundo-color);
+    color: var(--titulo-color);
     padding: 0 1em 0 0;
     margin: 0;
     width: 100%;
     border: 2px solid var(--quinto-color);
     font-size: 1rem;
-    cursor: inherit;
+    cursor: pointer;
     line-height: initial;
 }
 
@@ -176,6 +177,19 @@
   .input-archivo input:focus ~ .input-archivo-personalizado {
     box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
   }
+
+  .input-buscador{
+    background: var(--segundo-color);
+	  border: none;
+	  outline: none;
+	  padding: 5px;
+	  font-size: 1rem;
+	  color: var(--titulo-color);
+	  border: 2px solid var(--quinto-color);
+    border-radius: 5px;
+  }
+
+
 
 /*-=================    TABLA MOSTRAR DATOS =======================-*/  
 table {

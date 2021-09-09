@@ -1,3 +1,12 @@
+"use strict";
+//@ts-check
+/**
+ * Clase de peticiones http
+ * @module peticionPanel - clase handler
+ * @author autor 
+ * @copyright - ksksue
+ * @version 1.0
+ */
 class PeticionPanel {
     constructor(){
         this.url ='https://pokeapi.co/api/v2/pokemon';

@@ -26,11 +26,11 @@ export function OpcTanque(){
     const $opctanque = document.createElement('div');
         $opctanque.classList.add("menu-lateral");
         $opctanque.innerHTML=`
-                    <h1>Opciones</h1>
-                    <button id="btn-1" class="btn-modulo">tanque1</button>
-                    <button id="btn-2" class="btn-modulo">tanque2</button>
-                    <button id="btn-3" class="btn-modulo">tanque3</button>
-                    <button id="btn-4" class="btn-modulo">tanque4</button>
+          <div><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 15h14v3H5z"/></svg></div>
+          <button id="btn-1" class="btn-modulo">Tanques</button>
+          <button id="btn-2" class="btn-modulo">Nuevo</button>
+          <button id="btn-3" class="btn-modulo">Mantenimiento</button>
+          <button id="btn-4" class="btn-modulo">Metodo Cloracion</button>
         `;
         /**
          * inicio de funcionalidades
