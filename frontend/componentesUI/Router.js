@@ -4,7 +4,7 @@
 /**
  * Modulo Muestra - encargado de ingresar las muestras y creacion de hilos
  * @module router - enrutador de componentes
- * @author kevin pilo -umg 
+ * @author autor
  * @copyright - 
  * @version 1.0
  */

@@ -125,7 +125,7 @@
 .input-archivo {
     position: relative;
     cursor: pointer;
-    height: 1.5rem;
+    height: 1rem;
   }
 .input-archivo input {
     min-width: 5rem;
@@ -153,7 +153,7 @@
             user-select: none;
   }
   .input-archivo-personalizado:after {
-    content: "Seleccionar Archivo";
+    content: "Cargar...";
   }
   .input-archivo-personalizado:before {
     position: absolute;

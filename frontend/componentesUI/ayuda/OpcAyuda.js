@@ -1,21 +1,26 @@
 "use strict";
 //@ts-check
+/**
+ * Opciones del modulo Ayuda
+ * @module OpcAyuda - opciones
+ * @author autor 
+ * @copyright - ksksue
+ * @version 1.0
+ */
+/**
+ * importacion de modulos
+ * @requires componente:funciones - mostrar, ocultar y resaltar componentes.
+ */
+import {mostrarComponente} from '../utilidades/MostrarComponente.js'
+/**
+ * @type {string} - id de paginas
+ */
 
-
-
-import {mostrarComponente} from '../utilidades/MostrarComponente.js';
-const PAGINA_1= 'pg1';
-const PAGINA_2= 'pg2';
-const PAGINA_3= 'pg3';
-const PAGINA_4= 'pg4';
-const BTN_1='btn-1';
-const BTN_2='btn-2';
-const BTN_3='btn-3';
-const BTN_4='btn-4';
+const BTN_1 = 'btn-1';
 
 /**
- * creacion de las opciones que tendra el modulo ayuda
- * @returns {void} opciones del modulo y funcionalidades
+ * Construye el  componente de opciones del modulo de muestras
+ * @returns {HTMLDivElement} 
  */
 export function OpcAyuda(){
   const $opcayuda = document.createElement('div');
@@ -31,11 +36,13 @@ export function OpcAyuda(){
          * inicio de funcionalidades
          */
   function iniAyuda(){
-    document.getElementById(BTN_1).addEventListener('click',()=>mostrarComponente(PAGINA_1,BTN_1));
-    document.getElementById(BTN_2).addEventListener('click',()=>mostrarComponente(PAGINA_2,BTN_2));     
-    document.getElementById(BTN_3).addEventListener('click',()=>mostrarComponente(PAGINA_3,BTN_3));
-    document.getElementById(BTN_4).addEventListener('click',()=>mostrarComponente(PAGINA_4,BTN_4));
-    mostrarComponente(PAGINA_1,BTN_1);
+    const opcModulo = document.querySelector('.menu-lateral');
+      opcModulo.addEventListener('click',(e)=>{
+        if(e.target && e.target.tagName === 'BUTTON'){
+          mostrarComponente(e.target.id);
+        }            
+      })     
+    mostrarComponente(BTN_1);
   } 
   setTimeout(()=>iniAyuda(),100);
   return $opcayuda;
