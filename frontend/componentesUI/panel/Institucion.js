@@ -8,6 +8,7 @@ export function Institucion(){
         <section class="contenedor-panel">
     <div class="datos-institucion">
       <h3>Institución</h3>
+      <span>Datos actualizados el: 21/01/2021 08:55</span>
       <hr>
       <form action="">
         <p><label for="" class="input-label">Entidad:</label>
@@ -23,6 +24,24 @@ export function Institucion(){
           </p>
         <p><label for="" class="input-label">Nombre del Sistema:</label>
            <input type="text" class="input-dato" id="" placeholder="Nombre del sistema" required=""/></p>
+        <p><label for="" class="input-label">Mision:</label>
+           <input type="text" class="input-dato" id="" placeholder="Mision" required=""/></p>
+        <p class="contenedor-archivo">
+            <label for="">Imagen mision:</label>
+              <label class="input-archivo"> 
+                  <input type="file" id="file" aria-label="archivo">
+                  <span class="input-archivo-personalizado"></span>
+              </label>
+          </p>
+          <p><label for="" class="input-label">Vision:</label>
+          <input type="text" class="input-dato" id="" placeholder="Vision" required=""/></p>
+       <p class="contenedor-archivo">
+           <label for="">Imagen vision:</label>
+             <label class="input-archivo"> 
+                 <input type="file" id="file" aria-label="archivo">
+                 <span class="input-archivo-personalizado"></span>
+             </label>
+         </p>
       </form>
       <div class="botones-institucion">
         <p><button class="tercer-btn">Editar</button></p>
@@ -31,6 +50,7 @@ export function Institucion(){
     </div>
     <div class="datos-informe-salud">
       <h3>Datos para informe centro de salud</h3>
+      <span>Datos actualizados el: 21/01/2021 08:55</span>
       <hr>
       <form action="">
         <p><label for="" class="input-label">Departamento:</label>

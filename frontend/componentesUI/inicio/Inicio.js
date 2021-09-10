@@ -1,3 +1,5 @@
+import PeticionInicio from './ControladorInicio.js'
+
 export function Inicio() {
     const $Inicio = document.createElement('div');
     $Inicio.classList.add('inicio')
@@ -227,5 +229,34 @@ export function Inicio() {
 </footer>
 </section>
         `;
+
+    function iniInicio() {
+      const $peticionInicio = new PeticionInicio();
+        $peticionInicio.hacerPeticion(null,{},'GET').then(datos =>{
+          console.log(datos);
+        })
+    }
+    setTimeout(()=>iniInicio(),100);
     return $Inicio; 
 }
+
+/**
+ const peticonPanel = new PeticionPanel();
+            peticonPanel.hacerPeticion(null,{},'GET').then(datos=>{
+            const $list = document.getElementById('datos-institucion');
+            console.table(datos.results)
+            for (const iterator of datos.results) {
+                console.log(iterator)
+                $list.innerHTML +=`
+                <tr>
+                    <td>${iterator.name}</td>
+                    <td>${iterator.url}</td>
+                <td>
+                <a class='button' href='#'>opcion</a>
+                <a class='button' href='#'>opcion2</a>
+                </td>
+                </tr>
+                `;
+            }
+            })
+ */

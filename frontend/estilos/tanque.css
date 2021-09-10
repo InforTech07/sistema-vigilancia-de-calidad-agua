@@ -16,6 +16,11 @@
 
 }
 
+.form-cloracion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .nuevo-tanque{
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;

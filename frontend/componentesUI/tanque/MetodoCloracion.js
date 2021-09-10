@@ -19,7 +19,8 @@ export function MetodoCloracion(){
               <input type="text" class="input-dato" id="" placeholder="nombre de metodo" required=""/></p>
             <p><label for="" class="input-label">Descripcion:</label>
               <input type="text" class="input-dato" id="" placeholder="descripcion" required=""/></p>
-            <button class="primer-btn">Guardar</button>
+            <p><label for="" class="input-label"></label>
+              <button class="primer-btn">Guardar</button></P>
           </form>
           </div>
         <div>
